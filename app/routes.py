@@ -53,3 +53,7 @@ def add_harmony():
 @app.route('/change_instrument.html')
 def change_instrument():
     return "instrument"
+
+
+if __name__ = "__main__":
+    app.run(host='165.227.188.38')
