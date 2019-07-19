@@ -56,4 +56,4 @@ def change_instrument():
 
 
 if __name__ == "__main__":
-    app.run(host='165.227.188.38')
+    app.run(host='0.0.0.0')
