@@ -6,33 +6,26 @@ body {
 .main-hub {
   display: flex;
   justify-content: center;
+  /*@media vertical stacking*/
 }
 
 .container {
+  display: block;
   position: relative;
   width: 50%;
 }
 
-.image {
-  display: block;
-  width: 175px;
-  height: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .overlay {
-  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 185px;
-  opacity: 0;
+  height: 180px;
+  width: 95%;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #4e5c61;
 }
+
 
 .text {
   color: white;
@@ -46,11 +39,21 @@ body {
   text-align: center;
 }
 
-.container:hover .overlay {
-  opacity: 1;
+.overlay:hover {
+  background-color: #008CBA;
+
+
 }
 
-.route-links {
-  margin-right: 25px;
-  margin-left: 25px;
+@media only screen and (max-width: 900px) {
+.main-hub {
+  display: block;
+  justify-content: center;
+  /*@media vertical stacking*/
+}
+.container {
+  display: block;
+  position: relative;
+  width: 100%;
+}
 }
