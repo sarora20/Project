@@ -49,13 +49,7 @@
 
       <div class="container">
           <div class ="overlay">
-            <button onclick ="return addBassline()"><div class="text">Add a bassline</div></button>
-          </div>
-      </div>
-
-      <div class="container">
-          <div class ="overlay">
-            <button onclick ="return addHarmony()"><div class="text">Add a harmony</div></button>
+            <button onclick ="return addBassline()"><div class="text">Toggle Harmony</div></button>
           </div>
       </div>
 
@@ -64,6 +58,22 @@
             <button onclick ="return changeInstrument()"><div class="text">Change the MIDI instrument</div></button>
           </div>
       </div>
+
+      <div class="container">
+          <div class ="overlay">
+            <button onclick ="return toggleMidiType()"><div class="text">Toggle sequencer<br>🔒</div></button>
+          </div>
+      </div>
+
+      <div class="container">
+          <div class ="overlay">
+            <button onclick ="return clearSequencer()"><div class="text">Clear sequencer<br>🔒</div></button>
+          </div>
+      </div>
+
+    </div>
+    <div id="sequencer">
+
     </div>
   </body>
 </html>
